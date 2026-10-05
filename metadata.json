@@ -1,0 +1,8 @@
+{
+  "name": "نظام إدارة أصول كارجاس",
+  "description": "نظام متكامل لإدارة وتكويد أصول شركة كارجاس عبر جميع المحطات والمناطق مع المطابقة والتأكيد وتوليد أكواد QR واستيراد وتصدير Excel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

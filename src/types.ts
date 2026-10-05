@@ -1,0 +1,112 @@
+export type PageSize = 'a4' | 'letter';
+export type PageOrientation = 'portrait' | 'landscape';
+export type HeaderBadgeType = 'cloud' | 'scallop' | 'pill' | 'circle' | 'ribbon';
+export type MascotType = 'stethoscope' | 'police' | 'mail' | 'chef' | 'astronaut' | 'teacher' | 'bear' | 'star' | 'heart' | 'custom';
+export type DoodleType = 'heart' | 'envelope' | 'star' | 'smile' | 'pencil' | 'flower' | 'none';
+export type TraceDotStyle = 'dotted' | 'dashed' | 'outline' | 'solid';
+export type FontOption = 'Fredoka' | 'Marhey' | 'Cairo' | 'Tajawal' | 'Comic Neue' | 'Baloo 2' | 'Sour Gummy' | 'Bubblegum Sans' | 'Sniglet';
+
+export interface ColoringFrameConfig {
+  id: string;
+  name: string;
+  page: {
+    size: PageSize;
+    orientation: PageOrientation;
+    outerBorderColor: string;
+    outerBorderWidth: number;
+    outerBorderRadius: number;
+    outerDoubleBorder: boolean;
+    pageBgColor: string;
+    padding: number;
+  };
+  header: {
+    show: boolean;
+    bannerBg: string;
+    bannerBgEnd: string;
+    bannerBorderColor: string;
+    bannerBorderWidth: number;
+    bannerRadius: number;
+    mascot: {
+      type: MascotType;
+      customUrl: string;
+      color: string;
+      bgColor: string;
+    };
+    showStars: boolean;
+    starsColor: string;
+    title: string;
+    titleFont: FontOption;
+    titleColor: string;
+    titleSize: number;
+    titleOutline: boolean;
+    titleOutlineColor: string;
+    subtitle: string;
+    subtitleFont: FontOption;
+    subtitleColor: string;
+    subtitleSize: number;
+    badge: {
+      type: HeaderBadgeType;
+      text: string;
+      textColor: string;
+      bg: string;
+      borderColor: string;
+      icon: 'heart' | 'star' | 'smile' | 'none';
+      iconColor: string;
+    };
+  };
+  mainContent: {
+    borderColor: string;
+    borderWidth: number;
+    borderRadius: number;
+    bgColor: string;
+    showInstructionBadge: boolean;
+    instructionText: string;
+    instructionBg: string;
+    instructionTextColor: string;
+    instructionBorderColor: string;
+    imageSource: 'preset' | 'upload';
+    presetId: string;
+    uploadedImage: string | null;
+    imageScale: number;
+    imageBrightness: number;
+    imageContrast: number;
+    imageFit: 'contain' | 'cover';
+  };
+  bottomSection: {
+    show: boolean;
+    borderColor: string;
+    borderWidth: number;
+    borderRadius: number;
+    bgColor: string;
+    showReferenceThumbnail: boolean;
+    referenceImage: string | null;
+    referencePresetId: string;
+    traceHeaderIcon: 'pencil' | 'pen' | 'brush' | 'star';
+    traceHeaderText: string;
+    traceHeaderColor: string;
+    traceWords: string;
+    traceWordsFont: FontOption;
+    traceWordsColor: string;
+    traceWordsSize: number;
+    traceDotStyle: TraceDotStyle;
+    lineTopColor: string;
+    lineMidColor: string;
+    lineBottomColor: string;
+    lineDescenderColor: string;
+    showDescenderLine: boolean;
+    doodleIcon: DoodleType;
+    doodleColor: string;
+    doodleSparkles: boolean;
+  };
+  footer: {
+    show: boolean;
+    nameLabel: string;
+    dateLabel: string;
+    textColor: string;
+    lineColor: string;
+    fontSize: number;
+    icon: 'heart' | 'star' | 'flower' | 'smile' | 'none';
+    iconColor: string;
+    borderTop: boolean;
+  };
+}

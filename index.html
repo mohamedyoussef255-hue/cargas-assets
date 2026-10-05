@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نظام إدارة أصول كارجاس</title>
+    <meta name="description" content="نظام متكامل لإدارة وتكويد أصول شركة كارجاس عبر جميع المحطات والمناطق مع المطابقة والتأكيد وتوليد أكواد QR واستيراد وتصدير Excel." />
+    <meta property="og:title" content="نظام إدارة أصول كارجاس" />
+    <meta property="og:description" content="نظام متكامل لإدارة وتكويد أصول شركة كارجاس عبر جميع المحطات والمناطق مع المطابقة والتأكيد وتوليد أكواد QR واستيراد وتصدير Excel." />
+    <meta property="og:type" content="website" />
+    <meta name="apple-mobile-web-app-title" content="إدارة أصول كارجاس" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/jpeg" href="/NGV.jpg" />
+    <link rel="apple-touch-icon" href="/NGV.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Bubblegum+Sans&family=Cairo:wght@600;700;800;900&family=Comic+Neue:wght@400;700&family=Fredoka:wght@400;600;700&family=Marhey:wght@500;600;700&family=Tajawal:wght@500;700;800;900&family=Sour+Gummy:ital,wght@0,400..900;1,400..900&family=Sniglet:wght@400;800&family=Codystar&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('cargas_theme');
+          var isDark = saved === 'dark' || (saved === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="favGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#009639" />
+      <stop offset="100%" stop-color="#006828" />
+    </linearGradient>
+    <linearGradient id="favFlame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#EAA000" />
+      <stop offset="50%" stop-color="#FFD200" />
+      <stop offset="100%" stop-color="#FFF566" />
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" rx="60" fill="#FFFFFF" />
+
+  <!-- Outer Leaf Silhouette -->
+  <path d="M 200 35
+           C 188 66, 160 110, 132 134
+           C 98 122, 68 130, 48 148
+           C 42 154, 45 162, 56 169
+           C 84 186, 126 236, 200 280
+           C 274 236, 316 186, 344 169
+           C 355 162, 358 154, 352 148
+           C 332 130, 302 122, 268 134
+           C 240 110, 212 66, 200 35 Z"
+        fill="url(#favGreen)" />
+
+  <!-- Center Flames -->
+  <path d="M 180 195 C 166 173, 164 141, 180 105 C 176 124, 180 151, 192 170 C 194 186, 188 195, 180 195 Z" fill="url(#favFlame)" />
+  <path d="M 220 195 C 234 173, 236 141, 220 105 C 224 124, 220 151, 208 170 C 206 186, 212 195, 220 195 Z" fill="url(#favFlame)" />
+  <path d="M 200 65 C 187 103, 183 139, 188 185 C 192 199, 208 199, 212 185 C 217 139, 213 103, 200 65 Z" fill="url(#favFlame)" />
+
+  <!-- NGV Letters -->
+  <g transform="matrix(1 0 -0.23 1 76 10)">
+    <path d="M 92 304 L 118 304 L 142 344 L 142 304 L 164 304 L 164 372 L 138 372 L 114 332 L 114 372 L 92 372 Z" fill="#FFE000" stroke="#008033" stroke-width="7" stroke-linejoin="round" paint-order="stroke fill" />
+    <path d="M 236 322 L 214 322 C 212 316, 206 312, 196 312 C 184 312, 176 322, 176 338 C 176 354, 184 364, 196 364 C 206 364, 212 358, 214 350 L 196 350 L 196 336 L 236 336 L 236 366 C 228 373, 214 378, 196 378 C 170 378, 152 361, 152 338 C 152 315, 170 298, 196 298 C 214 298, 228 305, 236 322 Z" fill="#FFE000" stroke="#008033" stroke-width="7" stroke-linejoin="round" paint-order="stroke fill" />
+    <path d="M 244 304 L 268 304 L 284 350 L 300 304 L 324 304 L 297 372 L 271 372 Z" fill="#FFE000" stroke="#008033" stroke-width="7" stroke-linejoin="round" paint-order="stroke fill" />
+  </g>
+</svg>
